@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/4d852556a4.js" crossorigin="anonymous"></script>
+    <title>LocalHarbor | Navigate and Shop from Neighborhood Stores Online</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" alt="logo" width= "170px";></a>
+        <ul class="navbar">
+            <li><button id="search"><i class="fa-solid fa-magnifying-glass"></i> Search</button></li>
+            <li id="profile"><i class="fa-solid fa-user-tie"></i> Profile <i id="arrow" class="fa-solid fa-angle-down"></i>
+                <ul id="sub-navbar">
+                    <li id="user"></li><hr><hr>
+                    <li><button id="my_profile">My Profile</button></li>
+                    <li><button id="orders">Orders</button></li>
+                    <li><button id="logout">Logout</button></li>
+                </ul>
+                <ul id="login_sub-navbar">
+                    <li><a href="login.html">Login  <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            <li id="become_seller"><a href="seller/become_a_seller.html" target="_blank"><i class="fa-solid fa-store"></i> Become a Seller</a></li>
+        </ul>
+    </section>
+    <section id="category">
+        <div id="fashion">
+            <img src="images/fashion.jpg" alt="">
+            <h3>Fashion</h3>
+        </div>
+        <div id="electronics">
+            <img src="images/electronics.jpg" alt="">
+            <h3>Electronics</h3>
+        </div> 
+        <div id="grocery">
+            <img src="images/grocery.png" alt="">
+            <h3>Grocery</h3>
+        </div> 
+        <div id="beauty">
+            <img src="images/beauty.png" alt="">
+            <h3>Beauty</h3>
+        </div> 
+        <div id="furniture">
+            <img src="images/furniture.jpg" alt="">
+            <h3>Furniture</h3>
+        </div> 
+    </section>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/banner1.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/banner2.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/banner3.jpg">
+        </div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="showSlides()">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+      </div>
+    <section id="products"></section>
+ 
+    <section id="footer">
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <div><b>Address: </b>Bangalore, Karnataka</div>
+            <div><b>Email: </b>localharbor69@gmail.com</div>
+            <div><b>Contact: </b>1800 258 365</div>
+            <div><b>Hours: </b>10:00 - 18:00 MON - SAT</div>
+            <div><b>Follow us:</b></div>
+        </div>
+        <div class="social-icons">
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+            <b>Copyright © 2024, LocalHarbor</b>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="https://kit.fontawesome.com/4d852556a4.js" crossorigin="anonymous"></script>
+    <title>LocalHarbor | Product</title>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width= "170px";></a>
+        <ul class="navbar">
+            <li><button id="search"><i class="fa-solid fa-magnifying-glass"></i> Search</button></li>
+            <li id="profile"><i class="fa-solid fa-user-tie"></i> Profile <i id="arrow" class="fa-solid fa-angle-down"></i>
+                <ul id="sub-navbar">
+                    <li id="user"></li><hr><hr>
+                    <li><button id="my_profile">My Profile</button></li>
+                    <li><button id="orders">Orders</button></li>
+                    <li><button id="logout">Logout</button></li>
+                </ul>
+                <ul id="login_sub-navbar">
+                    <li><a href="login.html">Login  <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            <li id="become_seller"><a href="seller/become_a_seller.html" target="_blank"><i class="fa-solid fa-store"></i> Become a Seller</a></li>
+        </ul>
+    </section>
+    <section id="product">
+        <img src="" alt="Product Image" id="product-image">
+        <div id="pro-desc">
+            <div id="brand"></div>
+            <div id="product-name"></div>
+            <div id="product-price">
+                <span id="selling-price"></span>
+                <span id="mrp"></span>
+                <span id="discount"></span>
+            </div>
+            <div id="size"></div>
+            <div id="color"></div>
+            <div id="quantity"></div>
+            <div id="description"></div>
+            <button id="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            <a href="cart.html" id="go-to-cart"><i class="fa-solid fa-cart-shopping"></i> Go to cart</a>
+        </div>
+    </section>
+</body>
+<script src="js/product.js"></script>
+</html>

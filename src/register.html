@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="https://kit.fontawesome.com/4d852556a4.js" crossorigin="anonymous"></script>
+    <title>LocalHarbor | Register</title>
+</head>
+<body>
+   <section id="header">
+      <a href="index.html"><img src="images/logo.png" alt="logo" width= "170px"></a>
+  </section>
+    <div class="register" id="register">
+        <form class="register__form">
+           <h1 class="register__title">Create Account</h1>
+
+           <div class="register__content">
+             <div class="register__box">
+               <i class="fa-solid fa-user-tie register__icon"></i>
+                <div class="register__box-input">
+                   <input type="text" name="user" class="register__input" placeholder=" " required>
+                   <label for="register-name" class="register__label">Name</label>
+                </div>
+             </div>
+              <div class="register__box">
+               <i class="fa-solid fa-envelope register__icon"></i>
+                 <div class="register__box-input">
+                    <input type="email" name="email" class="register__input" placeholder=" " required>
+                    <label for="register-email" class="register__label">Email</label>
+                 </div>
+              </div>
+              <div class="register__box">
+               <i class="fa-solid fa-phone"></i>
+                 <div class="register__box-input">
+                    <input type="number" name="number" class="register__input" placeholder=" " required>
+                    <label for="register-number" class="register__label">Contact no.</label>
+                 </div>
+              </div>
+              <div class="register__box">
+                <i class="fa-solid fa-key register__icon"></i>
+
+                 <div class="register__box-input">
+                    <input type="password" name="password" class="register__input" id="register-pass" placeholder=" " required>
+                    <label for="register-pass" class="register__label">Password</label>
+                    <i class="fa-regular fa-eye-slash register__eye" id="register-eye"></i>
+                 </div>
+              </div>
+           </div>
+
+           <button class="register__button">Register</button>
+
+           <p class="register__register">
+              Already have an account? <a href="login.html">Login</a>
+           </p>
+        </form>
+     </div>
+     <div id="verify">
+         <label for="otp">Enter OTP received on your email..</label>
+         <input type="number" name="otp" id="otp">
+         <div><button id="verify_btn">Verify</button></div>
+     </div>
+     <script src="js/register.js"></script>
+</body>
+</html>

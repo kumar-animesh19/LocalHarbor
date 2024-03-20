@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:first center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Georgia", Times, serif;
+}
+
+img{
+    margin: 50px;
+}
+
+p{
+    font-size: 18px;
+    margin: 20px;
+}

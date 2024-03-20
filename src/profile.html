@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="https://kit.fontawesome.com/4d852556a4.js" crossorigin="anonymous"></script>
+    <title>LocalHarbor | Profile</title>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width= "170px";></a>
+        <div id="profile"><i class="fa-solid fa-user-tie"></i> Profile <i id="arrow" class="fa-solid fa-angle-down"></i>
+            <ul id="sub-navbar">
+                <li id="user"></li><hr><hr>
+                <li><button id="my_profile">My Profile</button></li>
+                <li><button id="orders">Orders</button></li>
+                <li><button id="logout">Logout</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="per_inf">
+        <div id="title">Personal Information</div>
+        <div class="for_label">
+            <label for="name">Name</label>
+            <button id="edit_name">Edit</button>
+            <button id="cancel_edit_name">Cancel</button>
+        </div>
+        <div class="for_input">
+            <input type="text" id="name" disabled>
+            <button id="update_name">Update</button>
+        </div>
+        <div class="for_label">
+            <label for="email">Email Address</label>
+            <button id="edit_email">Edit</button>
+            <button id="cancel_edit_email">Cancel</button>
+        </div>
+        <div class="for_input">
+            <input type="email" id="email" disabled>
+            <button id="update_email">Update</button>
+        </div>
+        <div class="for_label">
+            <label for="contact">Contact No.</label>
+            <button id="edit_contact">Edit</button>
+            <button id="cancel_edit_contact">Cancel</button>
+        </div>
+        <div class="for_input">
+            <input type="number" id="contact" disabled>
+            <button id="update_contact">Update</button>
+        </div>
+        <button id="del_acc">Delete Account</button>
+    </section>
+</body>
+<script src="js/profile.js"></script>
+</html>

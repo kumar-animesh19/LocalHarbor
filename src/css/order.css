@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: radial-gradient(circle, #f2edf2, #e7bfe7, #da90da, #cc5ecc, #bc04bc);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+button{
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+}
+#sub-navbar{
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    right: 30px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: none;
+}
+#profile{
+    padding: 0px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#sub-navbar li{
+    padding: 5px 0px;
+    list-style: none;
+}
+#sub-navbar button{
+    font-size: 16px;
+} 
+#profile:hover, #profile button:hover{
+    color: rgb(171, 10, 171);
+}
+#user{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+#heading{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    text-align: center;
+}
+.product{
+    background-color: white;
+    height: 300px;  
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.product img{
+    width: 280px;
+    height: 100%;
+    border-radius: 10px;
+}
+.pro-desc{
+    margin-left: 30px;
+    width: 1000px;
+}
+.pro-desc div{
+    margin: 3px;
+    font-weight: bold;
+}
+.brand{
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.product-name{
+    font-weight: bold;
+    height: 60px;
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.selling-price{
+    color: green;
+    font-weight: bolder;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-right: 4px;
+}
+.mrp,.discount{
+    padding: 2px;
+}

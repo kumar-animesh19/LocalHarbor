@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: radial-gradient(circle, #f2edf2, #e7bfe7, #da90da, #cc5ecc, #bc04bc);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+button{
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    padding: 0px 20px;
+    list-style: none;
+}
+.navbar li, .navbar li button{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#sub-navbar,#login_sub-navbar{
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    right: 285px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: none;
+}
+#sub-navbar li{
+    padding: 5px 0px;
+}
+#sub-navbar button{
+    font-size: 16px;
+} 
+#login_sub-navbar{
+    width: 150px;
+    padding: 15px 20px;
+    right: 335px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar li button:hover, .navbar li:hover, .navbar li a:hover, #login_sub-navbar a:hover{
+    color: rgb(171, 10, 171);
+}
+#user{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+#become_seller{
+    font-size: 20px;
+    font-weight: bold;
+}
+#product{
+    width: 90%;
+    height: 520px;
+    margin: 60px auto;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+}
+#product img{
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+#pro-desc{
+    padding: 20px 30px;
+    width: 70%;
+}
+#brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+#product-name{
+    font-weight: bold;
+    height: 70px;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+#product-price{
+    padding: 10px 0px;
+}
+#selling-price{
+    color: green;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-right: 4px;
+}
+#mrp,#discount{
+    padding: 2px;
+    font-weight: bold;
+}
+#size, #color, #quantity, #description{
+    padding: 10px 0px;
+    font-weight: bold;
+}
+#size, #color, #quantity{
+    display: none;
+}
+#description{
+    height: 150px;
+}
+#add-to-cart-btn, #go-to-cart{
+    padding: 15px 30px;
+    background-color: rgb(251, 100, 27);
+    border-radius: 10px;
+    float: right;
+}
+#go-to-cart{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+}

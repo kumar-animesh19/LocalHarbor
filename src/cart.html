@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://kit.fontawesome.com/4d852556a4.js" crossorigin="anonymous"></script>
+    <title>LocalHarbor | Profile</title>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" width= "170px";></a>
+        <div id="profile"><i class="fa-solid fa-user-tie"></i> Profile <i id="arrow" class="fa-solid fa-angle-down"></i>
+            <ul id="sub-navbar">
+                <li id="user"></li><hr><hr>
+                <li><button id="my_profile">My Profile</button></li>
+                <li><button id="orders">Orders</button></li>
+                <li><button id="logout">Logout</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="empty_cart">
+        <div id="cart">
+            <img src="images/empty cart.jpg" alt="empty_cart">
+            <div>
+                <h1>Your Cart is empty!</h1>
+                <h4>Add items to it.</h4>
+            </div>
+            <a href="index.html">Shop Now</a>
+        </div>
+    </section>
+    <section id="cart_item">
+        <section id="products"></section>
+        <section id="total_amount">
+            <div id="title">PRICE DETAILS</div><hr>
+            <div id="price">
+                <div id="price_title"></div>
+                <div id="price_val"></div>
+            </div>
+            <div id="dis">
+                <div id="dis_title">Discount</div>
+                <div id="dis_val"></div>
+            </div><hr>
+            <div id="total">
+                <div id="total_title">Total Amount Payable</div>
+                <div id="total_val"></div>
+            </div><hr>
+            <div id="place_order"><button id="place_order_btn">Place Order</button></div>
+        </section>
+    </section>
+</body>
+<script src="js/cart.js"></script>
+</html>

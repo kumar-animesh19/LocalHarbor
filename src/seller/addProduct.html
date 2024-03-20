@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/seller/addProduct.css">
+    <title>LocalHarbor | Add Item</title>
+</head>
+<body>
+    <section id="header">
+        <a href="home.html"><img src="../images/logo.png" alt="logo" width= "170px";></a>
+    </section>
+    <section id="add-product">
+        <div class="title">Add Product</div>
+        <form class="add-product" enctype="multipart/form-data">
+            <label for="category">Category</label>
+            <select name="category">
+                <option value="">-----Select-----</option>
+            </select>
+            <div  id="sub-category_label" class="hidden">
+                <label for="sub-category">Sub-Category</label>
+                <select name="sub_category">
+                    <option value="">-----Select-----</option>
+                </select>
+            </div>
+            <div  id="gender_label" class="hidden">
+                <label for="gender">Gender</label>
+                <select name="gender">
+                    <option value="">-----Select-----</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div id="for-all" class="hidden">
+                <label for="product-name">Product Name</label>
+                <input type="text" name="product_name" required>
+                <label for="product-brand">Product Brand</label>
+                <input type="text" name="product_brand" required>
+                <label for="for_mrp">MRP</label>
+                <input type="number" name="mrp" min="0" required>
+                <label for="selling-price">Selling Price</label>
+                <input type="number" name="selling_price" min="0" required>
+                <label for="discount">Discount (%)</label>
+                <input type="number" name="discount" min="0" max="100" required>
+            </div>
+            <div id="size_label" class="hidden">
+                <label for="for_size">Size</label>
+                <input type="text" name="size">
+            </div>
+            <div id="color_label" class="hidden">
+                <label for="for_color">Color</label>
+                <input type="text" name="color">
+            </div>
+            <div id="quantity_label" class="hidden">
+                <label for="for_quantity">Quantity</label>
+                <input type="text" name="quantity">
+            </div>
+            <div id="description_label" class="hidden">
+                <label for="for_description">Description</label>
+                <textarea name="description" cols="30" rows="8" required></textarea>
+            </div>
+            <label id="image_label" class="hidden" for="image"><img src="../images/upload.png" alt=""></label>
+            <input type="file" accept="image/*" name="product_image" id="image">
+            <img src="" alt="image preview" id="image_preview" class="hidden">
+            <div id="button">
+                <button type="submit" id="btn" class="add-btn hidden">ADD</button>
+            </div>
+        </form>
+    </section>
+</body>
+<script src="../js/seller/addProduct.js"></script> 
+</html>
