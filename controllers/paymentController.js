@@ -1,6 +1,8 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const stripe = require("stripe");
-const stripeGateway = stripe("sk_test_51OpUq4SAYvEZc85kdkzaix40KLBGIqNfVl4Qbs7DlXYaOrpNKfOOYrGwI5Dn709S5F6Zh0BWJWcBQXY8vQN1wdcv00JUkgzqBL");
-const customer = require("../models/customer")
+const stripeGateway = stripe(process.env.STRIPE_SECRET_KEY);
+const customer = require("../models/customer");
 
 const payment = async (req, res) => {
   try {

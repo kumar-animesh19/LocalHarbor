@@ -1,14 +1,12 @@
+require("dotenv").config();
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const path = require("path")
 const customerRouter = require("./routes/customerRoutes")
-const dotenv = require("dotenv")
 const sellerRouter = require("./routes/sellerRoutes")
 const verificationRouter = require("./routes/verificationRoutes")
 const paymentRouter = require("./routes/paymentRoutes")
-
-dotenv.config();
 
 app.use(express.json())
 
